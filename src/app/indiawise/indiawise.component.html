@@ -1,0 +1,27 @@
+<div class="container mt-5">
+  <table class="table" style="margin-top:150px;" data-aos="zoom-out-up">
+        <thead>
+          <tr>
+            <th scope="col">Active Cases</th>
+            <th scope="col">Confirmed Case</th>
+            <th scope="col">Recoverd</th>
+            <th scope="col">Deaths</th>
+            <th scope="col">Active Changes</th>
+            <th scope="col">Confirmed Changes</th>
+            <th scope="col">Recoverd Changes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table-warning">{{indiaDetails.active}}</td>
+            <td class="table-info">{{indiaDetails.confirmed}}</td>
+            <td class="table-success">{{indiaDetails.recovered}}</td>
+            <td class="table-danger">{{indiaDetails.deaths}}</td>
+            <td class="table-warning">{{indiaDetails.aChanges}}</td>
+            <td class="table-info">{{indiaDetails.cChanges}}</td>
+            <td class="table-success">{{indiaDetails.rChanges}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <app-chart></app-chart>
+</div>

@@ -1,0 +1,32 @@
+<div class="container mt-5">
+  <table class="table table-sm table-hover" style="margin-top:180px;">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">State</th>
+        <th scope="col">Active Cases</th>
+        <th scope="col">Confirmed Cases</th>
+        <th scope="col">Deaths</th>
+        <th scope="col">Last Update Time/Date</th>
+        <th scope="col">Migrated Other</th>
+        <th scope="col">Recoverd</th>
+        <th scope="col">State Code</th>
+        <th scope="col">State Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let a of details.statewise; let i = index" data-aos="fade-up">
+        <th scope="row">{{i+1}}</th>
+        <td class="table-success">{{a.state}} <br></td>
+        <td class="table-warning">{{a.active}}</td>
+        <td class="table-primary">{{a.confirmed}}</td>
+        <td class="table-danger">{{a.deaths}}</td>
+        <td class="table-secondary">{{a.lastupdatedtime}}</td>
+        <td>{{a.migratedother}}</td>
+        <td class="table-info">{{a.recovered}}</td>
+        <td>{{a.statecode}}</td>
+        <td  class="table-dark">{{a.statenotes}}</td>
+      </tr>
+     </tbody>
+  </table>
+</div>

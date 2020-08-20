@@ -1,0 +1,9 @@
+.nav-item{
+    font-size: 16px;
+    margin-left: 120px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(26, 14, 36, 0.884);
+    font-weight: 400;
+   
+}
